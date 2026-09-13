@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>गणपती बाप्पा मोरया | नम्र निमंत्रण</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     OPENING CURTAIN
+     ================================================= -->
+
+<div id="openingCurtain">
+
+    <div class="curtain curtain-left"></div>
+
+    <div class="curtain curtain-right"></div>
+
+
+    <div class="curtain-content">
+
+        <div class="curtain-ganesh">
+            🙏
+        </div>
+
+        <p>
+            ॥ श्री गणेशाय नमः ॥
+        </p>
+
+        <h1>
+            गणपती बाप्पा
+        </h1>
+
+        <h2>
+            मोरया! 🌺
+        </h2>
+
+        <div class="curtain-line">
+            ✦ ───────── ✦
+        </div>
+
+        <button onclick="openCurtain()">
+
+            <i class="fa-solid fa-hand-pointer"></i>
+
+            पडदा उघडण्यासाठी टॅप करा
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================================
+     NAVBAR
+     ================================================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        🕉️
+
+        <span>
+            श्री गणेशाय नमः
+        </span>
+
+    </div>
+
+
+    <div class="nav-links"
+         id="navLinks">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#program">
+            कार्यक्रम
+        </a>
+
+        <a href="#location">
+            आमचे घर
+        </a>
+
+        <a href="#gallery">
+            गॅलरी
+        </a>
+
+        <a href="#invitation">
+            निमंत्रण
+        </a>
+
+    </div>
+
+
+    <a href="#location"
+       class="map-btn">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        नकाशा
+
+    </a>
+
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</nav>
+
+
+
+<!-- =================================================
+     HERO
+     ================================================= -->
+
+<section class="hero"
+         id="home">
+
+
+    <div class="hero-content">
+
+        <p class="ganesh-mantra">
+            ॥ श्री गणेशाय नमः ॥
+        </p>
+
+
+        <h1>
+
+            गणपती बाप्पा<br>
+
+            <span>
+                मोरया!
+            </span>
+
+        </h1>
+
+
+        <div class="decor-line">
+            ❖ ───── ❖
+        </div>
+
+
+        <p class="hero-text">
+
+            आमच्या घरी गणपती बाप्पांचे आगमन होत आहे.
+            आपण सहकुटुंब सहपरिवार बाप्पांच्या दर्शनासाठी
+            अवश्य यावे, ही नम्र विनंती.
+
+        </p>
+
+
+        <div class="flower">
+            🌺
+        </div>
+
+    </div>
+
+
+
+    <div class="hero-image">
+
+        <!-- Main Ganpati Photo -->
+
+        <img src="images/image1.jpeg"
+             alt="Ganpati Bappa">
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     COUNTDOWN
+     ================================================= -->
+
+<section class="countdown-section">
+
+    <h2>
+        🌼 बाप्पा येत आहेत 🌼
+    </h2>
+
+
+    <div class="countdown">
+
+
+        <div class="time-box">
+
+            <span id="days">
+                00
+            </span>
+
+            <small>
+                दिवस
+            </small>
+
+        </div>
+
+
+        <div class="colon">
+            :
+        </div>
+
+
+        <div class="time-box">
+
+            <span id="hours">
+                00
+            </span>
+
+            <small>
+                तास
+            </small>
+
+        </div>
+
+
+        <div class="colon">
+            :
+        </div>
+
+
+        <div class="time-box">
+
+            <span id="minutes">
+                00
+            </span>
+
+            <small>
+                मिनिटे
+            </small>
+
+        </div>
+
+
+        <div class="colon">
+            :
+        </div>
+
+
+        <div class="time-box">
+
+            <span id="seconds">
+                00
+            </span>
+
+            <small>
+                सेकंद
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     PROGRAM
+     ================================================= -->
+
+<section class="section"
+         id="program">
+
+
+    <h2 class="section-title">
+        ✿ कार्यक्रम ✿
+    </h2>
+
+
+    <div class="program-grid">
+
+
+        <div class="program-card">
+
+            <div class="card-icon">
+                🙏
+            </div>
+
+            <h3>
+                गणपती स्थापना
+            </h3>
+
+            <p>
+
+                <b>दिनांक</b><br>
+
+                १४ सप्टेंबर २०२६
+
+            </p>
+
+
+            <p>
+
+                <b>वेळ</b><br>
+
+                सकाळी १०:०० वा.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="program-card">
+
+            <div class="card-icon">
+                🪔
+            </div>
+
+            <h3>
+                आरती
+            </h3>
+
+
+            <p>
+
+                <b>सकाळची आरती</b><br>
+
+                सकाळी ०७:३० वा.
+
+            </p>
+
+
+            <p>
+
+                <b>संध्याकाळची आरती</b><br>
+
+                संध्याकाळी ०७:३० वा.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="program-card">
+
+            <div class="card-icon">
+                🍛
+            </div>
+
+            <h3>
+                महाप्रसाद
+            </h3>
+
+
+            <p>
+
+                <b>दिनांक</b><br>
+
+                २५ सप्टेंबर २०२६
+
+            </p>
+
+
+            <p>
+
+                <b>वेळ</b><br>
+
+                दुपारी ०१:०० वा.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="program-card">
+
+            <div class="card-icon">
+                🌺
+            </div>
+
+            <h3>
+                गणपती विसर्जन
+            </h3>
+
+
+            <p>
+
+                <b>दिनांक</b><br>
+
+                 २५ सप्टेंबर २०२६
+
+            </p>
+
+
+            <p>
+
+                <b>वेळ</b><br>
+
+                दुपारी ०४:०० वा.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="program-card">
+
+            <div class="card-icon">
+                🪔
+            </div>
+
+            <h3>
+                सत्यनारायण पूजा
+            </h3>
+
+
+            <p>
+
+                <b>दिनांक</b><br>
+
+                सप्टेंबर २०२६
+
+            </p>
+
+
+            <p>
+
+                <b>वेळ</b><br>
+
+                दुपारी ०४:०० वा.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="program-card">
+
+            <div class="card-icon">
+                🎶
+            </div>
+
+            <h3>
+                भजन / कीर्तन
+            </h3>
+
+
+            <p>
+
+                <b>दिनांक</b><br>
+
+                सप्टेंबर २०२६
+
+            </p>
+
+
+            <p>
+
+                <b>वेळ</b><br>
+
+                रात्री ०8:०० वा.
+
+            </p>
+            </div>
+            </div>
+            <br>
+            <br>
+             <p align="center" class="date-message">
+    🌺 पूजा व भजनाची तारीख लवकरच कळविण्यात येईल 🌺
+</p>
+
+</section>
+
+
+
+<!-- =================================================
+     LOCATION
+     ================================================= -->
+
+<section class="section location-section"
+         id="location">
+
+
+    <div class="location-box">
+
+
+        <div>
+
+            <h2>
+                🏠 आमचे घर
+            </h2>
+
+
+            <h3>
+                Mestry Family
+            </h3>
+
+
+            <p>
+
+                सुतारवाडी, राम मंदिराजवळ,
+                काळसे, सिंधुदुर्ग,
+                महाराष्ट्र – ४१६६०५.
+
+            </p>
+
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=16.0244776592103,73.60438682971932"
+               target="_blank"
+               class="location-btn">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Google Maps वर पहा
+
+            </a>
+
+        </div>
+
+
+        <div class="location-emoji">
+
+            📍
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     GALLERY
+     ================================================= -->
+
+<section class="section"
+         id="gallery">
+
+
+    <h2 class="section-title">
+
+        📸 गॅलरी
+
+    </h2>
+
+
+    <div class="gallery">
+
+
+        <!-- FIRST 4 PHOTOS -->
+
+        <img src="images/image1.jpeg"
+             alt="Ganpati">
+
+
+        <img src="images/image2.jpeg"
+             alt="Ganpati Decoration">
+
+
+        <img src="images/image3.jpeg"
+             alt="Ganpati Celebration">
+
+
+        <img src="images/image4.jpeg"
+             alt="Ganpati Festival">
+
+
+
+        <!-- EXTRA 4 PHOTOS -->
+
+        <div class="extra-photos">
+
+
+            <img src="images/image5.jpeg"
+                 alt="Ganpati Celebration">
+
+
+            <img src="images/image6.jpeg"
+                 alt="Ganpati Celebration">
+
+
+            <img src="images/image7.jpeg"
+                 alt="Ganpati Celebration">
+
+
+            <img src="images/image8.jpeg"
+                 alt="Ganpati Celebration">
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- MORE PHOTOS BUTTON -->
+
+    <button id="morePhotosBtn"
+            onclick="showMorePhotos()">
+
+        📸 आणखी फोटो पहा
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =================================================
+     INVITATION
+     ================================================= -->
+
+<section class="invitation"
+         id="invitation">
+
+
+    <div class="invitation-content">
+
+
+        <div class="diya">
+            🪔
+        </div>
+
+
+        <h2>
+            🌺 नम्र निमंत्रण 🌺
+        </h2>
+
+
+        <p>
+
+            आपल्या उपस्थितीने आमच्या बाप्पांच्या
+            उत्सवाची शोभा वाढवा.
+
+        </p>
+
+
+        <h3>
+
+            गणपती बाप्पा मोरया!<br>
+
+            मंगलमूर्ती मोरया!
+
+        </h3>
+
+
+        <div class="diya">
+            🪔
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     SHARE
+     ================================================= -->
+
+<section class="share-section">
+
+
+    <h2>
+
+        🙏 हे निमंत्रण आपल्या प्रियजनांसोबत शेअर करा
+
+    </h2>
+
+
+    <button class="whatsapp-btn"
+            onclick="shareInvitation()">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        WhatsApp वर शेअर करा
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =================================================
+     FOOTER
+     ================================================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Mestry Family |
+        गणपती बाप्पा मोरया 🙏
+
+    </p>
+
+</footer>
+
+
+
+<!-- =================================================
+     BACK TO TOP
+     ================================================= -->
+
+<button id="topBtn"
+        onclick="scrollToTop()">
+
+    ↑
+
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
